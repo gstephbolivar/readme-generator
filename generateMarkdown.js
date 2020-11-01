@@ -34,7 +34,7 @@ ${data.questions}
 
 ## License
 
-// ${data.licence}
+${data.license}
 `;
 }
 
