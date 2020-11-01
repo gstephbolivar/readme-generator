@@ -29,7 +29,7 @@ Information for the usage goes here
 
 Information to test this site goes here
 
-## Feedback
+## Questions
 
 Information to give feedback goes here
 
