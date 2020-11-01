@@ -1,5 +1,8 @@
 const fs = require("fs");
 const inquirer = require("inquirer");
+const util = require("util");
+
+const writeFileAsync = util.promisify(fs.writeFile);
 const generateMarkdown = require("./generateMarkdown");
 
 // array of questions for user
@@ -11,43 +14,53 @@ const questions = () =>
       message: "What is your projects title?",
     },
     {
-        type: 'input',
-        name: 'description',
-        message: 'Write a description of your application.',
+      type: "input",
+      name: "description",
+      message: "Write a description of your application.",
     },
     {
-        type: 'input',
-        name: 'installation',
-        message: 'How does a user install your application?',
+      type: "input",
+      name: "installation",
+      message: "How does a user install your application?",
     },
     {
-        type: 'input',
-        name: 'usage',
-        message: 'What is the usage of your application?',
+      type: "input",
+      name: "usage",
+      message: "What is the usage of your application?",
     },
     {
-        type: 'input',
-        name: 'contributing',
-        message: 'How can a user contribute to your application?',
-    }
-    {
-        type: 'input',
-        name: 'test',
-        message: 'How can a user test your application?',
+      type: "input",
+      name: "contributing",
+      message: "How can a user contribute to your application?",
     },
     {
-        type: 'input',
-        name: 'questions',
-        message: 'Where can a user reach you for questions on your application? Include GitHub user name.',
+      type: "input",
+      name: "test",
+      message: "How can a user test your application?",
     },
-    // TODO: include an option for user to pick of licenses
+    {
+      type: "input",
+      name: "questions",
+      message:
+        "Where can a user reach you for questions on your application? Include GitHub username.",
+    },
+    {
+      type: "list",
+      name: "license",
+      message: "Pick a license for this application.",
+      choices: ["MIT License", "Apache License", "GPL License" ,"Other-Input Manually"],
+    },
   ]);
 
 // function to write README file
-function writeToFile(fileName, data) {}
+// function writeToFile("README.md", generateMarkdown data) {}
 
 // function to initialize program
-function init() {}
+// function init() {}
 
 // function call to initialize program
-init();
+// init();
+questions()
+  .then((data) => writeFileAsync("readme-practice.md", generateMarkdown(data)))
+  .then(() => console.log("Successfully wrote to md file"))
+  .catch((err) => console.error(err));
