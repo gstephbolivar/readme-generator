@@ -40,15 +40,35 @@ const questions = () =>
     },
     {
       type: "input",
-      name: "questions",
+      name: "name",
       message:
-        "Where can a user reach you for questions on your application? Include GitHub username.",
+        "What is your name, first and last?",
+    },
+    { 
+        type: "input", 
+        name: "username", 
+        message: "Input your GitHub Username.", 
+    },
+    {
+        type: "input",
+        name: "userlink",
+        message: "Input GitHub link here",
+    },
+    {
+        type: "input",
+        name: "email",
+        message: "Input your e-mail here.",
     },
     {
       type: "list",
       name: "license",
       message: "Pick a license for this application.",
-      choices: ["MIT License", "Apache License", "GPL License" ,"Other-Input Manually"],
+      choices: [
+        "MIT License",
+        "Apache License",
+        "GPL License",
+        "Other-Input Manually",
+      ],
     },
   ]);
 

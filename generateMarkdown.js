@@ -30,7 +30,9 @@ ${data.test}
 
 ## Questions
 
-${data.questions}
+${data.name}
+* **GitHub:** [${data.username}](${data.userlink})
+* **E-mail:** [${data.email}](${data.email})
 
 ## License
 
