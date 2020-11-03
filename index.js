@@ -41,33 +41,33 @@ const questions = () =>
     {
       type: "input",
       name: "name",
-      message:
-        "What is your name, first and last?",
-    },
-    { 
-        type: "input", 
-        name: "username", 
-        message: "Input your GitHub Username.", 
+      message: "What is your name, first and last?",
     },
     {
-        type: "input",
-        name: "userlink",
-        message: "Input GitHub link here",
+      type: "input",
+      name: "username",
+      message: "Input your GitHub Username.",
     },
     {
-        type: "input",
-        name: "email",
-        message: "Input your e-mail here.",
+      type: "input",
+      name: "userlink",
+      message: "Input GitHub link here",
     },
     {
-      type: "list",
+      type: "input",
+      name: "email",
+      message: "Input your e-mail here.",
+    },
+    {
+      type: "checkbox",
       name: "license",
       message: "Pick a license for this application.",
       choices: [
-        "MIT License",
-        "Apache License",
-        "GPL License",
-        "Other-Input Manually",
+        {
+          name: "MIT",
+          value:
+            "[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)",
+        },
       ],
     },
   ]);
