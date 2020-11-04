@@ -10,7 +10,7 @@ const generateMarkdown = (data) => {
 * [Usage](#usage)
 * [Contributing](#usage)
 * [Test](#test)
-* [Feedback](#feedback)
+* [Questions](#questions)
 * [License](#license)
 
 ## Installation
