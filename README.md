@@ -34,7 +34,7 @@ A user can contribute by adding to the Table of Contents and creating a new sect
 
 ## Test
 
-![ReadMe Generator](./images/ReadMeGenerator.gif)
+![ReadMe Generator](./images/README.mp4)
 
 ## Credits
 
