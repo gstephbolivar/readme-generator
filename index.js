@@ -50,26 +50,41 @@ const questions = () =>
     },
     {
       type: "input",
-      name: "userlink",
-      message: "Input GitHub link here",
-    },
-    {
-      type: "input",
       name: "email",
       message: "Input your e-mail here.",
     },
     {
       type: "checkbox",
-      name: "license",
+      name: "licenseBadge",
       message: "Pick a license for this application.",
       choices: [
         {
           name: "MIT",
-          value:
-            "[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)",
+          value: "MIT",
+        },
+        {
+          name: "Apache",
+          value: "Apache",
         },
       ],
+      default: ["MIT"],
     },
+    {
+        type: "checkbox",
+        name: "license",
+        message: "Pick a license to display at the bottom of markdown.",
+        choices: [
+          {
+            name: "MIT",
+            value: "https://opensource.org/licenses/MIT",
+          },
+          {
+            name: "Apache",
+            value: "https://www.apache.org/licenses/LICENSE-2.0",
+          },
+        ],
+        default: ["MIT"],
+      },
   ]);
 
 // function to write README file
