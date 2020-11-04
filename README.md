@@ -1,9 +1,12 @@
-# ReadMe Generator
-  [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/https://opensource.org/licenses/MIT)
-  ## Description
-  This application allows a user to dynamically create a README file.
-## Table of Contents
+# README-Generator
 
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
+## Description
+
+This application allows a user to dynamically generate a ReadMe markdown file directly from the terminal with prompts the user can follow and input, or select, to display. 
+
+ 
 * [Installation](#installation)
 * [Usage](#usage)
 * [Contributing](#usage)
@@ -13,28 +16,60 @@
 
 ## Installation
 
-Fork repository // -npm init // -npm inquirer --save
+Fork repository at [gstephbolivar github](https://github.com/gstephbolivar/readme-generator) .
 
-## Usage
+-npm init 
 
-This application allows a user to dynamically create a markdown file. The user follows a series of prompts inputing information, or selecting information, to the be displayed in a markdown.
-
-## Contributing
-
-A user can contribute by adding sections to the Table of Contents or adding to the license options. 
+-npm inquirer --save
 
 Happy Editing!
 
+## Usage
+
+This application allows a user to dynamically generate a ReadMe markdown file directly from the terminal with prompts the user can follow and input, or select, to display. 
+
+## Contributing
+
+A user can contribute by adding to the Table of Contents and creating a new section or adding more licenses to be chosen.
+
 ## Test
 
-A user can test the application by following the installation directions and creating their own README file.
+[ScreenCastify](https://drive.google.com/file/d/1dpNux4j6G-wKjK1_bwk7FFgKkwR8JTMr/view)
+
+## Credits
+
+I credit the following websites for assistance on this application:
+
+[NPMJS] (https://www.npmjs.com/package/inquirer#questions) for creating the checkbox of licenses. 
+
+[ShieldsIO] (https://shields.io/category/license) for general format of license badge. 
 
 ## Questions
 
-You can reach me via:
-* **GitHub:** [@gstephbolivar](https://github.com/@gstephbolivar)
-* **E-mail:** [g.stephanybolivar@gmail.com](g.stephanybolivar@gmail.com)
+####  **Stephany Bolivar** 
+*  **Github:** [@gstephbolivar](https://github.com/gstephbolivar)
+*  **Email:** [g.stephanybolivar@gmail.com](g.stephanybolivar@gmail.com)
 
 ## License
 
-Go to [https://opensource.org/licenses/MIT](https://opensource.org/licenses/MIT) for license description.
+MIT License
+
+Copyright (c) [2020] [Gloria Stephany Bolivar]
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
