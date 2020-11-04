@@ -91,6 +91,6 @@ const questions = () =>
 
 // function call to initialize program and generate README file
 questions()
-  .then((data) => writeFileAsync("README.md", generateMarkdown(data)))
+  .then((data) => writeFileAsync("readme-test.md", generateMarkdown(data)))
   .then(() => console.log("Successfully wrote to md file"))
   .catch((err) => console.error(err));
