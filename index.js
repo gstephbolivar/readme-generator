@@ -1,7 +1,9 @@
+// Variables to call modules and fs
 const fs = require("fs");
 const inquirer = require("inquirer");
 const util = require("util");
 
+// Variables to acquire generateMarkdown file and README file
 const writeFileAsync = util.promisify(fs.writeFile);
 const generateMarkdown = require("./generateMarkdown");
 
@@ -87,14 +89,7 @@ const questions = () =>
       },
   ]);
 
-// function to write README file
-// function writeToFile("README.md", generateMarkdown data) {}
-
-// function to initialize program
-// function init() {}
-
-// function call to initialize program
-// init();
+// function call to initialize program and generate README file
 questions()
   .then((data) => writeFileAsync("readme-practice.md", generateMarkdown(data)))
   .then(() => console.log("Successfully wrote to md file"))
