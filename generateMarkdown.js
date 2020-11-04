@@ -25,13 +25,15 @@ ${data.usage}
 
 ${data.contributing}
 
+Happy Editing!
+
 ## Test
 
 ${data.test}
 
 ## Questions
 
-${data.name}
+You can reach me via:
 * **GitHub:** [${data.username}](https://github.com/${data.username})
 * **E-mail:** [${data.email}](${data.email})
 

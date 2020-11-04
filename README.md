@@ -22,6 +22,7 @@ Fork repository at [gstephbolivar github](https://github.com/gstephbolivar/readm
 
 -npm inquirer --save
 
+Happy Editing!
 
 ## Usage
 
